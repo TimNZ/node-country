@@ -1,0 +1,27 @@
+{
+  "name": "node-country",
+  "version": "0.0.1",
+  "description": "Country Helper",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+	"country"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TimNZ/node-country.git"
+  },
+  "author": "Tim Shnaider",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "should": "*",
+    "mocha": "*"
+  }
+}
