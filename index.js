@@ -1,4 +1,5 @@
-var _CountryData = require('countrydata.json')
+var _CountryData = require('./countrydata.json')
+    _ = require('lodash')
 
 function CountryHelper()
 {
@@ -25,5 +26,5 @@ _.extend(CountryHelper.prototype,
     });
 
 var CountryHelperInstance = new CountryHelper();
-exports = CountryHelperInstance;
+module.exports = CountryHelperInstance;
 
