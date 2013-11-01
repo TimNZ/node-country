@@ -12,7 +12,7 @@ function CountryHelper()
             'countries': {
                 'get': function()
                 {
-                    return _.clone(countries);
+                    return countries;
                 }
             }
         })
@@ -22,7 +22,16 @@ _.extend(CountryHelper.prototype,
         states: function(countryCode)
         {
             return _CountryData[countryCode.toUpperCase()] && _CountryData[countryCode.toUpperCase()].states;
+        },
+        countryName: function(countryCode)
+        {
+            return _CountryData[countryCode.toUpperCase()] && _CountryData[countryCode.toUpperCase()].name;
+        },
+        stateName: function(countryCode,stateCode)
+        {
+            return _CountryData[countryCode.toUpperCase()] && _CountryData[countryCode.toUpperCase()].states[stateCode] && _CountryData[countryCode.toUpperCase()].states[stateCode];
         }
+
     });
 
 var CountryHelperInstance = new CountryHelper();
