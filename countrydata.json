@@ -4730,7 +4730,11 @@
             "MP": "Northern Mariana Islands",
             "PR": "Puerto Rico",
             "UM": "United States Minor Outlying Islands",
-            "VI": "Virgin Islands, U.S."
+            "VI": "Virgin Islands, U.S.",
+            "AA": "Armed Forces Americas",
+            "AE": "Armed Forces Europe",
+            "AP": "Armed Forces Pacific"
+
         },
         "code": "US",
         "name": "United States"
